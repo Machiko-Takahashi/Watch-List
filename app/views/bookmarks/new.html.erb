@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>Create a Bookmark</h1>
+  <%= simple_form_for [@movie,@bookmark] do |f| %>
+    <%= f.input :movie_id %>
+    <%= f.input :comment %>
+    <%= f.submit 'Create Bookmark', class: 'btn btn-success' %>
+  <% end %>
+</div>
+
