@@ -2,7 +2,7 @@
   <h1>All lists</h1>
   <ul>
     <% @lists.each do |list| %>
-    <li><%= link_to list.name, list_path(list) %></li>
+    <li><%= link_to list.name, list_path(list) %><%= list.photo.attached? ? cl_image_tag(list.photo.key, height: 300, width: 400, crop: :fill) : "No photo!" %></li>
     <% end %>
   </ul>
 
