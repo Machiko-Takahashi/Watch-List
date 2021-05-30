@@ -1,8 +1,15 @@
 .banner {
     display: flex;
-    align-items: center;
+    height: 680px;
+    background-color: #2e1f1f
+
+}
+
+.banner-img {
+  align-items: center;
     background-size: cover;
     background-position: center;
     padding: 150px 0;
-    height: 100px;
+    width: 510px;
+
 }

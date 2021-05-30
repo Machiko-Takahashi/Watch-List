@@ -1,19 +1,26 @@
-<div class="container">
+<div class="index-container">
 
-  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(assets/chicago.jpg);">
-  <div class="container ">
-    <h1>Green CINEMA</h1>
-    <p>Make your own movie library</p>
+  <div class="banner px-5">
+    <div class="banner-img" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(assets/dvds-couch.jpg);">
+      <div class="page-title">
+        <h1>Cinema Library</h1>
+        <p>Make your own movie selection</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="cards">
+    <h1>Your selections</h1>
+    <% @lists.each do |list| %>
+      <div class="card-category">
+        <%= link_to list.name, list_path(list) %><%= list.photo.attached? ? cl_image_tag(list.photo.key, height: 300, width: 400, crop: :fill) : "No photo!" %>
+
+      </div>
+    <% end %>
+
+    <%= link_to 'create a selection', new_list_path %>
+
   </div>
 </div>
 
 
-  <h1>All lists</h1>
-  <ul>
-    <% @lists.each do |list| %>
-    <li><%= link_to list.name, list_path(list) %><%= list.photo.attached? ? cl_image_tag(list.photo.key, height: 300, width: 400, crop: :fill) : "No photo!" %></li>
-    <% end %>
-  </ul>
-
-  <%= link_to 'create a list', new_list_path %>
-</div>
