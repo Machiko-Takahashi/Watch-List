@@ -1,6 +1,11 @@
 .navbar-lewagon {
   justify-content: space-between;
   background: linear-gradient(to bottom, #660033 0%, #666633 100%);
+  // background: linear-gradient(to bottom, #660033 0%, #58424d 100%);
+  // background: linear-gradient(to bottom, #2e1f1f 0%, #58424d 100%);
+  position: sticky;
+  height: 8vh;
+  top: 0;
 }
 
 .navbar-lewagon .navbar-collapse {
