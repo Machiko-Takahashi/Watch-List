@@ -9,14 +9,16 @@
     </div>
   </div>
 
-  <div class="cards conteiner">
+  <div class="card-section">
     <h1>Your selections</h1>
-    <% @lists.each do |list| %>
-      <div class="card-category">
-        <%= link_to list.name, list_path(list) %><%= list.photo.attached? ? cl_image_tag(list.photo.key, height: 300, width: 400, crop: :fill) : "No photo!" %>
+    <div class="card-container">
+      <% @lists.each do |list| %>
+        <div class="card-category">
+          <%= link_to list.name, list_path(list) %><%= list.photo.attached? ? cl_image_tag(list.photo.key, height: 300, width: 400, crop: :fill) : "No photo!" %>
 
-      </div>
-    <% end %>
+        </div>
+      <% end %>
+    </div>
 
     <%= link_to 'create a selection', new_list_path %>
 

@@ -1,6 +1,23 @@
-.cards {
-
+// containers
+.card-section {
+padding: 35px;
 background-color: #5f4848;
 // background-color: #5f5050;
 // background-color: #5d5050;
+}
+
+// cards-grid
+.card-container {
+  // margin: 0 auto;
+  // width: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+
+// individuals
+.card-section h1 {
+  text-align: center;
+  margin: 0 auto;
 }
