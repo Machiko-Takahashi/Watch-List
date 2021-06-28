@@ -1,6 +1,6 @@
 // containers
 .card-section {
-padding: 35px;
+padding: 45px;
 background-color: #5f4848;
 // background-color: #5f5050;
 // background-color: #5d5050;
@@ -12,7 +12,9 @@ background-color: #5f4848;
   // width: 800px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px;
+  text-align: center;
+  grid-gap: 30px;
+  flex-grow: 1;
 }
 
 
@@ -22,4 +24,19 @@ background-color: #5f4848;
   margin: 0 auto;
   opacity: 0.5;
   color: white;
+}
+
+.card-category {
+  position: relative;
+  // width: 400px;
+  // height: 300px;
+}
+
+.card-category h3 {
+  position: absolute;
+  margin:0;
+  padding:0;
+  top: 48%;
+  left: 43%;
+
 }
