@@ -1,5 +1,5 @@
 // containers
-.card-section {
+.card-area {
 padding: 45px;
 background-color: #5f4848;
 // background-color: #5f5050;
@@ -19,24 +19,44 @@ background-color: #5f4848;
 
 
 // individuals
-.card-section h1 {
+.card-area h1 {
   text-align: center;
   margin: 0 auto;
+  margin-bottom: 30px;
   opacity: 0.5;
   color: white;
+  font-size: 40px;
+  font-weight: 600;
 }
 
-.card-category {
+.card-index {
   position: relative;
-  // width: 400px;
-  // height: 300px;
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 7px 7px 10px rgba(125, 247, 170, .2);
+
 }
 
-.card-category h3 {
-  position: absolute;
+.card-index h3 {
+  // position: absolute;
+  // top: 48%;
+  left: 43%;
   margin:0;
   padding:0;
-  top: 48%;
-  left: 43%;
+  font-size: 35px;
+  color: white;
+  text-shadow: 1px 1px 5px grey;
+  opacity: 0.8;
 
+}
+
+.card-index-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
 }

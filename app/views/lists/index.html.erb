@@ -9,19 +9,23 @@
     </div>
   </div>
 
-  <div class="card-section">
-    <h1>Your selections</h1>
+  <div class="card-area">
+    <h1>Your selection
+
+
+
+    </h1>
     <div class="card-container">
       <% @lists.each do |list| %>
-        <div class="card-category">
-         <%= list.photo.attached? ? cl_image_tag(list.photo.key, height: 300, width: 400, crop: :fill) : "No photo!" %>
-          <h3><%= link_to list.name, list_path(list) %></h3>
+        <div class="card-index" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(<%= list.photo.attached? ? cl_image_path(list.photo.key) : image_path("chicago.jpg") %>)">
+          <%= link_to '', list_path(list), class: "card-index-link" %>
+          <h3><%= list.name  %></h3>
 
         </div>
       <% end %>
     </div>
 
-    <%= link_to 'create a selection', new_list_path, class: "btn btn-list mt-4"  %>
+    <%= link_to 'create a selection', new_list_path, class: "btn btn-list mt-5"  %>
 
   </div>
 </div>
