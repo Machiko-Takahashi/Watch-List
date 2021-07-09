@@ -1,8 +1,9 @@
 .banner {
     display: flex;
     height: 680px;
-    background-color: #2e1f1f
-
+    background-color: #2e1f1f;
+    position: relative;
+    padding: 7px 60px;
 }
 
 .banner-img {
@@ -11,12 +12,53 @@
     background-position: center;
     padding: 150px 0;
     width: 510px;
-
 }
+
+.banner-img2 {
+    background-size: cover;
+    background-position: center;
+    padding: 150px;
+    width: 455px;
+    position: absolute;
+    left: 727px;
+    top: 15px;
+}
+
+.banner-img3 {
+    background-size: cover;
+    background-position: center;
+    width: 372px;
+    height: 265px;
+    position: absolute;
+    left: 910px;
+    top: 221px;
+}
+
+.banner-img4 {
+    background-size: cover;
+    background-position: center;
+    width: 354px;
+    height: 248px;
+    position: absolute;
+    left: 754px;
+    top: 415px;
+}
+
+.banner-img5 {
+    background-size: cover;
+    background-position: center;
+    width: 260px;
+    height: 330px;
+    position: absolute;
+    left: 567px;
+    top: 190px;
+}
+
 
 .page-title {
   color: white;
   margin-left: 20px;
+  opacity: 0.8;
 }
 
 .page-title p {
